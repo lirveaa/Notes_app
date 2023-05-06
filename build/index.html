@@ -71,7 +71,9 @@
             <div class="grid-column mt3 mb2 order-1 reveal-on-scroll is-revealing">
                 <h3>Your list of notes are here: </h3>
                 <ul>
-                    
+                    {% for note in notes %}
+                    <li>{{ note }}</li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
