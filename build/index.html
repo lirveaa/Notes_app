@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Simple Notes App</title>
+	<meta name="description" content="">
+
+	<!-- The compiled CSS file -->
+	<link rel="stylesheet" href="/static/css/production.css">
+
+	<!-- Web fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Source+Serif+Pro:700" rel="stylesheet"> 
+
+	<!-- favicon.ico. Place these in the root directory. -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>	Simple Notes App </title>
+	
+</head>
+<body class="has-animations">
+	
+<!-- Header -->
+<header class="align--center pt3">
+    <div class="container--lg border--bottom pb3">
+        <!-- <img class="logo mb3 reveal-on-scroll is-revealing" src="/img/logo.svg" alt="Carta"> -->
+        <h1 class="mb2">Simple notes app 1.0</h1>
+        
+    </div>
+</header>
+
+<main>
+
+    <!-- Feature list -->
+    <div class="container pt3 mt2 text--gray align--center">
+        <p class="mb3">This simple web app can be used for these purposes: &nbsp;</p>
+        <div class="grid-row">
+            <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
+                <!-- <img class="illustration--small mb1" src="/img/assign.svg" alt="Assign to others"> -->
+                <p>Take short notes</p>
+            </div>
+            <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
+                <!-- <img class="illustration--small mb1" src="/img/connected.svg" alt="Stay connected"> -->
+                <p>Write up TO-DOs</p>
+            </div>
+            <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
+                <!-- <img class="illustration--small mb1" src="/img/search.svg" alt="Powerful search"> -->
+                <p>Quick access to these notes</p>
+            </div>
+          
+        </div>
+    </div>
+
+    <!-- Focus -->
+    <div class="container--lg pt1 pb1">
+
+        <div class="grid-row grid-row--center">
+            <div class="grid-column mt3 mb2 order-2">
+                <div class="border--bottom pb2 mb2">
+                    <h2>How to use it?</h2>
+                    <p>To start using it just fill the input form below and press Add note button. Your notes will apear on the right side</p>
+                </div>
+                <form class="form" action="{{ url_for('index') }}" method="post">
+                    <textarea name="note" class="form-control mb1" placeholder="Input you notes here"></textarea>
+                    <button class="btn btn--default">Add note</button>
+                </form>    
+            </div>
+    
+            <div class="grid-column mt3 mb2 order-1 reveal-on-scroll is-revealing">
+                <h3>Your list of notes are here: </h3>
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-row grid-row--center">
+            
+            <div class="grid-column mt3 mb2">
+                <div class="border--bottom pb2 mb2">
+                    <h2>Used tech stacks:</h2>
+                    <ol>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Python 3</li>
+                        <li>Flask</li>
+                        <li>JavaScript</li>
+                    </ol>
+                    <p>Feel free to use this project, discuss, make clone repos and forks!</p>
+                </div>
+                <p class="italic text--gray mb1">Full source code on GitHub:&nbsp;</p>
+                <p class="bold" >This would be source url &nbsp;ClevoCode </p>
+            </div>
+        </div>
+
+    </div>
+
+        <!-- CTA -->
+    <div class="bg--dark-gray align--center pt3 pb3">
+        <div class="container pt2 pb2">
+            <p class="h3 text--white mb1 bold" >Made By ClevoCode <a href="https://www.linkedin.com/in/husen-mansurov-01752322b/">LinkedIn Page</a></p>
+            <p class="text--white mb3">Design by <a href="https://www.papayatemplates.com" class="link link--text">Papaya</a>. Illustrations from&nbsp;<a href="https://undraw.co/" class="link link--text">Undraw</a>.<br/>Template from: <a href="https://www.free-css.com/free-css-templates/page287/carta">Free-css.com</a></p>
+            
+        </div>
+    </div>
+
+</main>
+  <!-- Scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <!-- The compiled JavaScript file -->
+  <script src="static/js/production.js"></script>
+
+
+</body>
+</html>
