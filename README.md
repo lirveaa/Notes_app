@@ -1,6 +1,8 @@
 # Notes_app
 # This is Simple Notes App 
 
+![alt text](https://github.com/lirveaa/Notes_app/blob/master/notes_app_screenshot.png)
+
 How to install it:
 * Make virtual environment: <b> python3 -m venv flask_env </b>
 
