@@ -2,12 +2,10 @@
 # This is Simple Notes App 
 
 How to install it:
-*  Make virtual environment: - python3 -m venv flask_env
+* Make virtual environment: <b> python3 -m venv flask_env </b>
 
 * install Flask framework: <b> pip install Flask</b>
 
-* setting Environment: 
-- export FLASK_APP=application.py
+* Set Flask Environment: <b> export FLASK_APP=application.py </b>
 
-* Running app:
-- flask run
+* Run app: <b> flask run </b>
